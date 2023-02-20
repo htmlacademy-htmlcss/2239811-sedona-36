@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-       <nav class="navigation"> 
+       <nav class="navigation">
             <a class=" main-header logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта городка Седона">
            </a>
@@ -63,12 +64,12 @@
                 <span class="visualli-hidden">
                 Главная
                 </span>
-                <img src="images/catalog/homewhite.svg" width="18" height="17" top="2" left="1" alt="домой">  
+                <img src="images/catalog/homewhite.svg" width="18" height="17" top="2" left="1" alt="домой">
                 </a>
                 <img src="images/arrow.white.svg" width="6.39" height="9.94" top="5" left="0.8" alt="стрелка">
                </li>
                 <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы 
+                <a class="breadcrumbs-link">Гостиницы
                </a>
               </li>
            </ul>
@@ -76,7 +77,7 @@
 
          <section class="catalog-products">
             <h2 class="visualli-hidden">Список гостиниц с фильтрами</h2>
-            <form class="catalog-folter" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура</legend>
                 <ul class="catalog-filter-list">
@@ -99,7 +100,7 @@
                    </label>
                    </li>
                 </ul>
-               </fieldset> 
+               </fieldset>
                <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья</legend>
                 <ul class="catalog-filter-list">
@@ -127,26 +128,26 @@
                 <button class="button" type="submit">применить</button>
                 <button class="button" type="reset">сбросить</button>
             </form>
-
+            <div class="sorting-container">
             <p>Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="сортировка">
                 <option value="cheap">сначала дешевое</option>
                 <option value="expensive">сначала дорогое</option>
                 <option value="popular">сначала популярное</option>
             </select>
-            <a href="#" class="button">
+            <a href="#" class="button button-light">
                 <span class="visualli-hidden">показать карточки</span>
                 <img src="images/catalog/vector8.svg" width="16" height="14" alt="карточки">
             </a>
-            <a href="#" class="button">
+            <a href="#" class="button button-light">
                 <span class="visualli-hidden">показать слайды</span>
                 <img src="images/catalog/vector7.svg" width="16" height="14" alt="слайды">
             </a>
-            <a href="#" class="button">
+            <a href="#" class="button button-light">
                 <span class="visualli-hidden">показать список</span>
                 <img src="images/catalog/vector6.svg" width="16" height="14" alt="список">
             </a>
-
+            </div>
             <ul class="product-list">
                 <li class="product-card">
                   <a class="product-card-link" href="product.html">
@@ -220,7 +221,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
+              <a class="pagination-link-pagination-next" href="#">
                 <span class="visually-hidden">Показать еще</span>
                 <img class="pagination-image" src="images/catalog/point.svg"  width="17" height="26" alt="три точки">
               </a>
@@ -229,7 +230,7 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-         
+
          </section>
 
       <section class="subscribe">
