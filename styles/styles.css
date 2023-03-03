@@ -13,7 +13,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font size: 18px;
   line-height: 21px;
@@ -24,6 +31,17 @@ body {
 .page-header {
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation-list {
+  width: 507px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 340px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -38,6 +56,10 @@ text-dacoration: none;
 text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
 color: #333333;
 background-color: #ffffff;
@@ -46,8 +68,26 @@ background-size: 100% auto;
 background-repeat: no-repeat;
 }
 
+.page-container {
+width: 1200px;
+margin: auto;
+}
+
+.logo {
+display: block;
+margin: auto;
+}
+
+.advanteges-item {
+width: 400px;
+}
+
 .advanteges-list {
- text-align: center;
+display: flex;
+justify-content: space-between;
+margin: 0;
+padding: 0;
+text-align: center;
 }
 
 .advanteges-title {
@@ -59,6 +99,10 @@ background-color: #82B3D3;
 }
 
 .servises-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
  }
 
@@ -69,6 +113,8 @@ font-weight: 700;
 color:#000000;
 background-color: #82B3D3;
 }
+
+
 
 .search {
 text-align: center;
@@ -105,6 +151,22 @@ font size: 40px;
 text-align: center;
 color: #000000;
 background-image: url("..\images\footer\footer_background.jpg");
+}
+
+.page-footer-container {
+display: flex;
+width: 1200px;
+margin: auto;
+}
+
+.footer-social-list {
+width: 142px;
+margin-right: 236.5;
+}
+
+.footer-contacts {
+width: 331;
+margin-left: auto;
 }
 
 .inner-header-title {
