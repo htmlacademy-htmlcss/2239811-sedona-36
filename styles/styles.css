@@ -15,7 +15,7 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  Font size: 18px;
+  font size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
@@ -28,10 +28,10 @@ body {
 
 .navigation-link {
 font-family: "PT sans", sans-serif;
-Line height: 24px;
+line height: 24px;
 font-weight: 700;
-Align: Left;
-Vertical-align: Top;
+align: Left;
+vertical-align: Top;
 color: #000000;
 background-color: #ffffff;
 text-dacoration: none;
@@ -41,7 +41,7 @@ text-transform: uppercase;
 .main-index {
 color: #333333;
 background-color: #ffffff;
-background-image: url("images\hero\index-background.jpg")
+background-image: url("..\images\hero\index-background.jpg");
 background-size: 100% auto;
 background-repeat: no-repeat;
 }
@@ -66,15 +66,15 @@ background-color: #82B3D3;
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
-color:#000000
-background-color: #82B3D3
+color:#000000;
+background-color: #82B3D3;
 }
 
 .search {
 text-align: center;
 }
 .search-title {
-font-family: PT Sans;
+font-family: "PT Sans", sans-serif;
 font-size: 30px;
 font-weight: 700;
 line-height: 36px;
@@ -91,7 +91,7 @@ text-align: center;
 }
 
 .subscribe-title {
-font family: PT Sans;
+font family: "PT Sans", sans-serif;
 font style: Bold;
 font size: 30px;
 text-transform: uppercase;
@@ -99,12 +99,12 @@ color: #ffffff;
 }
 
 .page-footer-contacts {
-Font family: PT Sans;
-Font style: Regular;
-Font size: 40px;
+font family: PT Sans;
+font style: Regular;
+font size: 40px;
 text-align: center;
 color: #000000;
-background-image: url
+background-image: url("..\images\footer\footer_background.jpg");
 }
 
 .inner-header-title {
