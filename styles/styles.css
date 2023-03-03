@@ -183,6 +183,15 @@ text-align: left;
 color: #ffffff;
 }
 
+.catalog-filter {
+width: 1060;
+margin-right: 70;
+}
+
+.catalog-right-column {
+width: 1060;
+}
+
 .catalog-filter-title {
 font-size: 20px;
 line-height: 24px;
