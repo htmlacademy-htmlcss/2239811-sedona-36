@@ -34,14 +34,22 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 507px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
   width: 340px;
   margin-left: auto;
+}
+
+.navigation-user .navigation-link {
+min-width: 44px;
+min-height: 64px;
 }
 
 .navigation-link {
@@ -58,6 +66,7 @@ text-transform: uppercase;
 
 .main-container {
   flex-grow: 1;
+  padding-top: 51px;
 }
 
 .main-index {
@@ -76,6 +85,12 @@ margin: auto;
 .logo {
 display: block;
 margin: auto;
+margin-bottom: 82px;
+}
+
+.advanteges {
+margin-top: 0;
+margin-bottom: 25px;
 }
 
 .advanteges-item {
