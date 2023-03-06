@@ -106,10 +106,22 @@ body {
 }
 
 .advanteges-title {
+  margin-top: 0;
+  margin-bottom: 62px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 246px;
+  padding-top: 112px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 112px;
 }
 
 .servises-list {
@@ -121,6 +133,8 @@ body {
  }
 
 .services-title {
+  margin-top: 0;
+  margin-bottom: 30x;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -173,27 +187,60 @@ body {
 }
 
 .footer-social-list {
-  width: 142px;
-  margin-right: 236.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.footer-social-item {
+  width: 24px;
+  height: 14px;
+  margin-right: 26px;
+  margin-bottom: 26px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-contacts {
+  margin-top: 45px;
+  margin-bottom: 35px;
   width: 331;
   margin-left: auto;
 }
 
 .inner-header-title {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
   text-align: left;
   color: #ffffff;
 }
 
+.main-inner {
+padding-top: 35px;
+color: #ffffff;
+background-image: url("../images/catalog/background.inner.jpg") ;
+}
+
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-style: regular;
   text-align: left;
   color: #ffffff;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+margin-right: 28px;
+color: inherit;
 }
 
 .catalog-filter {
@@ -221,11 +268,16 @@ body {
 
 
 .sorting-container {
+  padding: 6;
+  margin-bottom: 40px;
+  display: flex;
   color: #000000;
   background-color: #ffffff;
 }
 
 .button-light {
+  width: 48px;
+  height: 48px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -244,12 +296,37 @@ body {
   color: #000000;
 }
 
+.pagination-container{
+  display: flex;
+  padding: 0;
+  background-color: #ffffff;
+}
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   color: #82B3D3;
   background-color: #ffffff;
   text-decoration: none;
   line-height: 16px;
   font-weight: 700;
+}
+
+.pagination-link-pagination-next {
+  margin-left: auto;
 }
 
 .pagination-current {
