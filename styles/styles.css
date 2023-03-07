@@ -222,9 +222,9 @@ body {
 }
 
 .main-inner {
-padding-top: 35px;
-color: #ffffff;
-background-image: url("../images/catalog/background.inner.jpg") ;
+  padding-top: 35px;
+  color: #ffffff;
+  background-image: url("../images/catalog/background.inner.jpg") ;
 }
 
 .breadcrumbs {
@@ -239,8 +239,8 @@ background-image: url("../images/catalog/background.inner.jpg") ;
 }
 
 .breadcrumbs-link {
-margin-right: 28px;
-color: inherit;
+  margin-right: 28px;
+  color: inherit;
 }
 
 .catalog-filter {
@@ -268,7 +268,7 @@ color: inherit;
 
 
 .sorting-container {
-  padding: 6;
+  padding: 6px;
   margin-bottom: 40px;
   display: flex;
   color: #000000;
@@ -301,6 +301,7 @@ color: inherit;
   padding: 0;
   background-color: #ffffff;
 }
+
 .pagination {
   display: flex;
   margin: 0;
@@ -337,4 +338,10 @@ color: inherit;
 .pagination-link-pagination-next {
   color: #000000;
   background-color:#ffffff;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
