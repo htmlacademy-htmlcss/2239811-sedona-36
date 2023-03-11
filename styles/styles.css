@@ -90,7 +90,6 @@ body {
 }
 
 .navigation-list {
-  flex-wrap: wrap;
   display: flex;
   width: 339px;
   height: 64px;
@@ -103,24 +102,38 @@ body {
 }
 
 .navigation-item {
-  display: flex;
-  width: 100px;
-  height: 64px;
-  gap: 8px;
-  padding: 16px 20px;
   margin: 0;
+  padding: 16px 20px;
 }
 
 .navigation-list-navigation-user {
   width: 268px;
   margin-left: 285px;
   height: 64px;
-  padding: 22px 12px;
-  margin-right: 70px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
   list-style-type: none;
+}
+
+.navigation-list-navigation-user .navigation-item:nth-child(1n) .navigation-link {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-list-navigation-user .navigation-item:nth-child(2n) .navigation-link {
+  background-image: url("../images/header/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .navigation-list .navigation-link {
@@ -130,8 +143,6 @@ body {
 
 .navigation-link {
   font-family: "PT sans", sans-serif;
-  height: 24px;
-  width: 68px;
   font-weight: 700;
   text-align: Left;
   vertical-align: Top;
@@ -139,7 +150,7 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 16px 20px;
+  position: relative;
 }
 
 .navigation-link-button {
@@ -156,10 +167,6 @@ body {
   cursor: pointer;
 }
 
-.main-container {
-  flex-grow: 1;
-  padding-top: 51px;
-}
 
 .main-index {
   color: #333333;
@@ -182,12 +189,54 @@ body {
   width: 1200px;
 }
 
+.hero-welcome{
+  margin-top: 51px;
+  margin-left: 506px;
+}
+
+.hero-gorgeous {
+  margin-left: 472px;
+  margin-top: 11px;
+  margin-right: 472px;
+}
+
+.hero-sedona {
+  margin-bottom: 82px;
+  margin-left: 371px;
+  margin-top: 52px;
+}
+
+.hero-staircase {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
 .lead {
+  size: 30px;
+  width: 620px;
   display: flex;
+  line-height: 36px;
   text-align: center;
+  margin-left: 290px;
+  margin-right: 290px;
+  margin-bottom: 25px;
+  margin-top: 69px;
+}
+
+.lead-description {
+  font:
+  width: 651px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 274px;
+  margin-top: 25px;
+  margin-bottom: 69px;
+  margin-right: 274px;
+  size: 22px;
 }
 
 .advanteges {
+  font: "PT sans", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   width: 1200px;
@@ -221,8 +270,10 @@ body {
 
 .index-columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 0;
+  margin-top: 21px;
   padding-top: 112px;
   padding-left: 85px;
   padding-right: 85px;
@@ -404,6 +455,20 @@ body {
 .breadcrumbs-link {
   margin-right: 28px;
   color: inherit;
+}
+
+.breadcrumbs-link-button-home {
+  background-image: url("../images/catalog/homewhite.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.navigation-icon-arrow {
+  background-image: url("../images/catalog/arrow.white.svg");
+  background-size: 6px 9px;
+  background-repeat: no-repeat;
+  margin-left: 11px;
 }
 
 .catalog-filter {
