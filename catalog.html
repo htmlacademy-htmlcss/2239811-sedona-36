@@ -8,9 +8,9 @@
   <body>
     <header class="page-header">
        <nav class="navigation">
-            <a class=" main-header-logo" href="index.html">
+            <p class="header-logo" href="index.html">
             <img src="images/header/logo.svg" width="140" height="70" alt="Логотип сайта городка Седона">
-           </a>
+            </p>
           <ul class="navigation-list">
              <li class="navigation-item">
             <a class="navigation-link"
@@ -48,7 +48,7 @@
               </a>
              </li>
              <li class="navigation-user">
-               <a class="navigation-link"
+               <a class="navigation-link-button"
                   href="form.html">Хочу сюда
                </a>
              </li>
@@ -155,10 +155,12 @@
                     <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="ущелье">
                     <h3 class="product-card-title">Amara Resort & Spa</h3>
                  </a>
-                    <p>Гостиница</p>
+                    <p class="product-description">Гостиница</p>
                     <b class="product-card-price">от 4000 ₽</b>
+                    <p class="product-card-navigation">
                     <a class="product-card-button button" href="#">Подробнее</a>
-                    <a class="product-cart-button" href="#">В избранное</a>
+                    <a class="button-blue button" href="#">В избранное</a>
+                    </p>
                     <div>
                     <span>четыре звезды</span>
                     </div>
@@ -169,10 +171,12 @@
                        <img class="product-card-image" src="images/catalog/hotel-2.jpg"  width="300" height="212" alt="гора и радуга">
                         <h3 class="product-card-title">Villas at Poco Diablo</h3>
                    </a>
-                        <p>Гостиница</p>
+                        <p class="product-description">Гостиница</p>
                         <b class="product-card-price">от 5000 ₽</b>
+                        <p class="product-card-navigation">
                         <a class="product-card-button button" href="#">Подробнее</a>
-                        <a class="button" href="#">В избранное</a>
+                        <a class="button-blue button" href="#">В избранное</a>
+                       </p>
                         <div>
                         <span>четыре звезды</span>
                        </div>
@@ -183,10 +187,12 @@
                         <img class="product-card-image" src="images/catalog/hotel-3.jpg"  width="300" height="212" alt="скала">
                         <h3 class="product-card-title">Desert Quail inn</h3>
                  </a>
-                      <p>Гостиница</p>
+                      <p class="product-description">Гостиница</p>
                        <b class="product-card-price">от 2500 ₽</b>
+                       <p class="product-card-navigation">
                        <a class="product-card-button button" href="#">Подробнее</a>
-                       <a class="button" href="#">В избранное</a>
+                       <a class="button-blue button" href="#">В избранное</a>
+                      </p>
                        <div>
                        <span>три звезды</span>
                        </div>
@@ -197,10 +203,12 @@
                          <img class="product-card-image" src="images/catalog/hotel-4.jpg"  width="300" height="212" alt="ночное небо">
                          <h3 class="product-card-title">GreenTree inn</h3>
                   </a>
-                       <p>Гостиница</p>
+                       <p class="product-description">Гостиница</p>
                        <b class="product-card-price">от 1500 ₽</b>
+                       <p class="product-card-navigation">
                        <a class="product-card-button button" href="#">Подробнее</a>
-                       <a class="button" href="#">В избранное</a>
+                       <a class="button-blue button" href="#">В избранное</a>
+                      </p>
                        <div>
                        <span>две звезды</span>
                        </div>
@@ -241,8 +249,8 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email">Email</label>
           <input class="filed" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="button subscribe-button" type="submit">
-            <span class="visually-hidden">подписаться</span>
+          <button class="subscribe-button button-blue" type="submit">
+            <span class="button-blue">подписаться</span>
           </button>
         </form>
       </section>
@@ -253,19 +261,19 @@
   <div class="page-footer-container">
  <ul class="footer-social-list">
   <li class="footer-social-item">
-    <a class="button" href="#">
+    <a class="button-light" href="#">
       <span class="visually-hidden">Вконтакте</span>
       <img src="images/footer/vk.svg" wight="24" height="14" alt="Вконтакте">
     </a>
   </li>
   <li class="footer-social-item">
-    <a class="botton" href="#">
+    <a class="button-light" href="#">
       <span class="visually-hidden">Телеграмм</span>
       <img src="images/footer/telegram.svg" wight="18" height="15" alt="Телеграмм">
     </a>
   </li>
   <li class="footer-social-item">
-    <a class="botton" href="#">
+    <a class="button-light" href="#">
       <span class="visually-hidden">Ютуб</span>
       <img src="images/footer/youtube.svg" wight="22" height="17" alt="Ютуб">
     </a>
