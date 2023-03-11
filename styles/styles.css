@@ -41,42 +41,99 @@ body {
   overflow: hidden;
 }
 
+.button {
+  padding: 8px 26px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-blue {
+  padding: 8px 26px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation {
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  height: 64px;
+}
+
+.header-logo {
+  margin-left: 70px;
+  margin-top: 0;
+  margin-right: 28px;
 }
 
 .navigation-list {
   display: flex;
-  flex-wrap: wrap;
-  width: 507px;
+  width: 339px;
+  height: 64px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-
-.navigation-item {
-  margin-right: 16px;
-  margin-top: 20px;
-  margin-left: 16px;
+.navigation-item:nth-child(3n) {
+  margin-right: 0;
 }
 
-.navigation-list:nth-child(3n) {
-  margin-right: 0;
+.navigation-item {
+  margin: 0;
+  padding: 16px 20px;
 }
 
 .navigation-list-navigation-user {
   width: 268px;
-  margin-left: 862px;
+  margin-left: 285px;
   height: 64px;
-  padding: 22px 12px;
-  margin-right: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation-list-navigation-user .navigation-item:nth-child(1n) .navigation-link {
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-list-navigation-user .navigation-item:nth-child(2n) .navigation-link {
+  background-image: url("../images/header/favorites.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .navigation-list .navigation-link {
@@ -86,7 +143,6 @@ body {
 
 .navigation-link {
   font-family: "PT sans", sans-serif;
-  line-height: 24px;
   font-weight: 700;
   text-align: Left;
   vertical-align: Top;
@@ -94,12 +150,23 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 }
 
-.main-container {
-  flex-grow: 1;
-  padding-top: 51px;
+.navigation-link-button {
+  padding: 8px 26px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
+
 
 .main-index {
   color: #333333;
@@ -112,15 +179,64 @@ body {
 .page-container {
   width: 1200px;
   margin: auto;
+  padding: 0;
 }
 
-.logo {
+.hero {
   display: block;
   margin: auto;
+  height: 485px;
+  width: 1200px;
+}
+
+.hero-welcome{
+  margin-top: 51px;
+  margin-left: 506px;
+}
+
+.hero-gorgeous {
+  margin-left: 472px;
+  margin-top: 11px;
+  margin-right: 472px;
+}
+
+.hero-sedona {
   margin-bottom: 82px;
+  margin-left: 371px;
+  margin-top: 52px;
+}
+
+.hero-staircase {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.lead {
+  size: 30px;
+  width: 620px;
+  display: flex;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 290px;
+  margin-right: 290px;
+  margin-bottom: 25px;
+  margin-top: 69px;
+}
+
+.lead-description {
+  font:
+  width: 651px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 274px;
+  margin-top: 25px;
+  margin-bottom: 69px;
+  margin-right: 274px;
+  size: 22px;
 }
 
 .advanteges {
+  font: "PT sans", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   width: 1200px;
@@ -129,32 +245,48 @@ body {
 }
 
 .advanteges-item {
-  width: 400px;
+  text-align: center;
+  color: #82B3D3;
+  display: flex;
 }
 
 .advanteges-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  text-align: center;
   list-style-type: none;
 }
 
 .advanteges-title {
   margin-top: 0;
   margin-bottom: 102px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-size: 30px;
   color: #ffffff;
-  background-color: #82B3D3;
+  list-style-type: none;
 }
 
 .advanteges-description {
   margin: 0;
+  font-family: "PT Sans";
 }
 
 .index-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 21px;
+  padding-top: 112px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 112px;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advanteges-description:last-child {
+  margin-bottom: 0;
+}
+
+.index-columns-servises {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0;
@@ -162,11 +294,10 @@ body {
   padding-left: 85px;
   padding-right: 85px;
   padding-bottom: 112px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.advanteges-description:last-child {
-  margin-bottom: 0;
-}
 
 .servises-list {
   display: flex;
@@ -174,6 +305,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style-type: none;
  }
 
 .services-title {
@@ -248,7 +380,7 @@ body {
 
 .footer-social-list {
   margin: 0;
-  padding: 0;
+  padding-top: 45px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -284,6 +416,12 @@ body {
   margin: 0 auto;
 }
 
+.footer-contacts-logo {
+  margin-top: 48px;
+  margin-right: 70px;
+  margin-left: 235px;
+}
+
 .inner-header-title {
   margin-top: 0;
   margin-bottom: 8px;
@@ -317,6 +455,20 @@ body {
 .breadcrumbs-link {
   margin-right: 28px;
   color: inherit;
+}
+
+.breadcrumbs-link-button-home {
+  background-image: url("../images/catalog/homewhite.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.navigation-icon-arrow {
+  background-image: url("../images/catalog/arrow.white.svg");
+  background-size: 6px 9px;
+  background-repeat: no-repeat;
+  margin-left: 11px;
 }
 
 .catalog-filter {
@@ -370,7 +522,14 @@ body {
   display: grid;
   grid-template-rows: 300px min-content max-content auto auto 20px;
   grid-template-columns: 140px 140px;
-  gap: 20px
+  gap: 20px;
+  color: #000000;
+  border: #F2F2F2;
+}
+
+.product-card-navigation {
+  margin-bottom: 0;
+  margin-top: 16px;
 }
 
 .product-card-image {
@@ -390,16 +549,21 @@ body {
   margin-bottom: 16px;
 }
 
-.product-card-button button {
+.product-card-button-button {
   width: 140px;
   height: 36px;
   color: #756157;
+}
+
+.button + .button {
+  margin-left: 20px;
 }
 
 .pagination-container{
   display: flex;
   padding: 0;
   background-color: #ffffff;
+
 }
 
 .pagination {
